@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:Marvel="clr-namespace:Marvel.Views"
+             xmlns:marvel="clr-namespace:Marvel"
+             mc:Ignorable="d"
+            
+             x:Class="Marvel.Views.MarvelCreatorPage">
+
+    <ContentPage.Content>
+            
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+   
+            <Image x:Name="Xname" Source="Background.jpg"   Grid.RowSpan="2" Aspect="AspectFill"/>
+            <Label Text="SERIES" TextColor="White" FontSize="60" FontAttributes="Bold"  Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center"/>
+            <Marvel:ListMoviesMarvelPage Grid.Row="1"/>
+
+
+        </Grid>
+     
+     
+    </ContentPage.Content>
+</ContentPage>
