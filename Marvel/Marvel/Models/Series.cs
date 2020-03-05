@@ -111,9 +111,5 @@ namespace Marvel.Models
             [JsonProperty("results")]
             public IList<Result> Results { get; set; }
         }
-
-     
-
-
     }
 }

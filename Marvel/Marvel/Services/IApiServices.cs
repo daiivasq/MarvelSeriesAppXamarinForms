@@ -8,6 +8,6 @@ namespace Marvel.Services
 {
     public interface IApiServices
     {
-        Task<Series> GetCreatorsInformationAsync();
+        Task<Series> GetInformationAsync();
     }
 }

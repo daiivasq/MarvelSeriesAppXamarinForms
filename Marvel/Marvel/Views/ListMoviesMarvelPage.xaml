@@ -10,7 +10,7 @@
     <ContentView.Content>
 
 
-        <CarouselView ItemsSource="{Binding ListMovies}" PeekAreaInsets="0,0,150,0">
+        <CarouselView ItemsSource="{Binding ListSeries}" PeekAreaInsets="0,0,150,0" >
             <CarouselView.ItemsLayout>
                 <LinearItemsLayout    Orientation="Horizontal"
               SnapPointsType="Mandatory"
@@ -19,8 +19,8 @@
             </CarouselView.ItemsLayout>
             <CarouselView.ItemTemplate>
                 <DataTemplate>
-                    <Frame BackgroundColor="White" CornerRadius="15">
-                        <Grid>
+                    <Frame BackgroundColor="White" CornerRadius="15" >
+                        <Grid >
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="60"/>

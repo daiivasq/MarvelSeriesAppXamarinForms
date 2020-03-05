@@ -10,8 +10,8 @@
              x:Class="Marvel.Views.MarvelCreatorPage">
 
     <ContentPage.Content>
-            
-        <Grid>
+
+        <Grid >
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
@@ -20,14 +20,12 @@
 
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-   
-            <Image x:Name="Xname" Source="Background.jpg"   Grid.RowSpan="2" Aspect="AspectFill"/>
+
+            <Image x:Name="Xname" Source="Background.jpg" Opacity="0.7" Grid.RowSpan="2" Aspect="AspectFill"/>
             <Label Text="SERIES" TextColor="White" FontSize="60" FontAttributes="Bold"  Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center"/>
-            <Marvel:ListMoviesMarvelPage Grid.Row="1"/>
+            <Marvel:ListMoviesMarvelPage Grid.Row="1" Padding="10"/>
 
 
         </Grid>
-     
-     
     </ContentPage.Content>
 </ContentPage>
